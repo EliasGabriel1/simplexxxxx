@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="elias gabrel o brabo" />
+	<link rel="stylesheet" type="text/css" href="./css//estilo.css" />
+	<title>Simplex professor sabatine</title>
+	<link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="content">
+			<div class="content-text">
+				<div class="">
+					<div class="">
+						<h1>Bora de simplex?</h1>
+					</div>
+				</div>
+				<form name="form1">
+					<fieldset>
+						<div class="row">
+							<div class="col-md-2">
+								<label for="variaveis" class="lbl1">Quantas variáveis?</label>
+							</div>
+							<div class="col-md-1">
+								<input type="number" class="inp1" size="5%" maxlength="10" id="in1" name="variaveis"
+									value="" min="1" autocomplete="off" autofocus style="height: 28px" />
+							</div>
+						</div>
+						<br />
+						<div class="row">
+							<div class="col-md-2">
+								<label for="regras" class="lbl1">Quantas restrições?</label>
+							</div>
+							<div class="col-md-2">
+								<input type="number" class="inp1" size="5%" maxlength="10" id="in2" name="regras"
+									value="" min="1" autocomplete="off" style="height: 28px" />
+
+								<input type="button" class="inp1 btn btn-primary btn-sm" id="btn1" name="ok" value="ok"
+									onClick="criarForm(variaveis.value,regras.value)" />
+							</div>
+						</div>
+					</fieldset>
+				</form>
+				<br />
+				<form action="" method="post" name="form2" id="form2" style="display:none">
+					<p><b>Função objetivo</b></p>
+					<div id="aqui"></div>
+					<br />
+					<label><input type="button" class="btn btn-primary" id="btn2" name="calc" value="Resolver"
+							onClick="resolver()" /></label>
+					<label><input type="reset" class="btn btn-success" id="btn3" name="novo" value="Novo"
+							onClick="atualizar()" /></label>
+				</form>
+
+				<div id="tab" style="width: 80%; margin: 0 auto;"></div>
+				<div id="solucao"></div>
+				<label><input type="hidden" class="btn btn-success" id="btn4" name="novo2" value="Novo"
+						onClick="atualizar()" /></label>
+			</div>
+			<picture><img src="./img/perfil.png" width="100%" alt="perfil"></picture>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/funcoes.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="./js/fraction.js" charset="UTF-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Lora', serif;
+}
+
+button{
+	border: none;
+}
+
+.container{
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.content{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+input[type="number"] {
+	width:40px;
+	text-align: right;
+}
+
+fieldset {
+	border: solid 1px #000;
+	padding: 2%;
+}
+
+#tab{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.btn{
+	padding: 5px 8px;
+	cursor: pointer;
+}
+
+.btn-primary{
+	background-color: rgb(3, 3, 65);
+	color: white;
+}
+
+.btn-success{
+	color: white;
+	background-color: rgb(5, 66, 5);
+}
+
+#tab{
+	display: none;
+}
